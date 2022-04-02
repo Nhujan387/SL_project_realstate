@@ -95,13 +95,18 @@
                                 Contact no: <?php echo $result['phone']; ?></br>
                                 Address: <?php echo $result['current_address']; ?></br>
                             </div>
-                            <?php } ?>
+                            
                     </div>
                     <div class="typeofpropertybuyerinfo" style="margin-top:5px;">
                             <div class="sellerinformation">
-                            <h2 style="text-align:center;" >Want the property!!</h2><br>
-                            <p style="text-align:center">Call the seller in above given contact number.</p>
+                            <h2 style="text-align:center;" >Want the property!!</h2>
+                            <p style="text-align:center;margin:5px">Call the seller in above given contact number.</p>
+                            <p style="text-align:center">OR</p>
+                            <div style="text-align:center">
+                                <a href="sendmail.php?user_id=<?php echo $result['user_id']?>" ><button style="background-color:blue;font-size:18px;width:60%;color:white;border-radius:5px;margin: 2px;;cursor:pointer">Send Mail</button></a>
                             </div>
+                        </div>
+                            <?php } ?>
                     </div>
                 </div>
             </div>

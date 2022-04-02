@@ -1,0 +1,168 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Minion Variable Concept';
+}
+.page{
+    width:100%;
+    height: 99vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.img{
+    border: 1px solid black;
+}
+
+.adminlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    background-color: #FFFAF0;
+}
+.inputmargin{
+    margin:5px;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 20px ;
+}
+
+.navigation{
+    height:10vh;
+    background:white;
+    padding: 0px 50px 0px 50px;
+    border-bottom: 5px solid black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.logo{
+    width: 300px;
+}
+.abutton{
+    background-color: white;
+    color:black;
+    float:right;
+    text-decoration: none;
+    font-size:26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding:8px 10px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+    margin-top: 10px ;
+}
+
+.abutton:hover{
+    background: black;
+    color: white;
+}
+
+.navforadmin{
+    height: 10vh;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    width:95%;
+    margin:0 auto;
+    border-radius: 5px 5px 0px 0px;
+    padding:5px;
+}
+.navstyle{
+    margin:3px;
+    background-color: white;
+    height: 5vh;
+    width: 20%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding:5px;
+    border-radius: 5px;
+}
+.navstyle:hover{
+    background-color: black;
+    color:white;
+}
+.navactive{
+    background-color: black;
+    color:white;
+}
+.dashed{
+    width:95%;
+    margin:0 auto;
+    height:75vh;
+    border: 1px solid black;
+    background-color: #143d59;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.dashcard{
+    width:80%;
+    height:30vh;
+    border:1px solid black;
+    margin:0 auto;
+    border-radius: 5px;
+    background-color: white;
+}
+.dashinfo{
+    width:100%;
+    height:150px;
+    font-size:66px;
+    display:flex;
+    justify-content:center;
+    align-items: center;    
+}
+.fortable{
+    width:95%;
+    margin:0 auto;
+    height:79vh;
+    border: 1px solid black;
+    background-color: #143d59;
+    padding:5px;
+}
+.changepage{
+    position: fixed;
+    bottom: 1;
+    text-align: center;
+    padding:5px;
+    width: 100%;
+}
+
+.pointer{
+    color:black;
+    background-color: white;
+    border:none;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 5px;
+    padding: 1px;
+    border-radius: 10px;
+}
+.white{
+    height: 72vh;
+    width:60%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px ;
+}
+
+.removeproperty{
+    width:95%;
+    margin:0 auto;
+    height:79vh;
+    border: 1px solid black;
+    background-color: #143d59;
+    padding:5px;
+}
+.sureremove{
+    width:40%;
+    height: 72vh;
+    padding:10px;
+    margin:0 auto;
+    background-color: white;
+}

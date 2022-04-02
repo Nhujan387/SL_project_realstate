@@ -27,6 +27,7 @@
                 address = document.getElementById('currentaddress').value;
                 phone = document.getElementById('phoneno').value;
                 price = document.getElementById('price').value;
+                image = document.getElementById('file').value;
                 validate = true;
 
                 if(address ==''){
@@ -46,6 +47,13 @@
                     validate = false;
                 }else{
                     document.getElementById('emt-phone').style.display = 'none';
+                }
+
+                if(image ==''){
+                    document.getElementById('emt-img').style.display = 'block';
+                    validate = false;
+                }else{
+                    document.getElementById('emt-img').style.display = 'none';
                 }
 
                 if(validate){
@@ -141,7 +149,8 @@
                         <div class="subheads">Images</div>
                         <label class="info">Image:</label>
                         <input class="input"  type="file" id="file" name="file" accept="image/*"
-                        onchange="document.getElementById('showimg').src=window.URL.createObjectURL(this.files[0]);" /></br>
+                        onchange="document.getElementById('showimg').src=window.URL.createObjectURL(this.files[0]);" /> 
+                        <span class="error-message" id="emt-img">Image cannot be empty.</span></br>
 
                         <img style="width:20%;height:20vh; border: 1px solid black; margin:2px;"  id="showimg"></p>
                     </fieldset>

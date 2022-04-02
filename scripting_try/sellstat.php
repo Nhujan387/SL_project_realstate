@@ -26,10 +26,8 @@
     $totalResult = mysqli_num_rows($queryfetch);
     if($totalResult>0){
         
-        /* if data count is not less than 0 */
         $pagination = ceil($totalResult / $searchlimit);
 
-        /* kati ota pagination links banauney bhanera  */
         $sql="SELECT s.s_id, s.property_type, s.Postdate, s.province, s.district, s.address, s.ropani, s.aana, s.paisa, s.dam,
         s.bedroom_number, s.toilet_number, s.floor, s.amount, s.current_address, s.phone, s.image, s.user_id, s.status , u.name 
        FROM `sale` as s inner join user as u on s.user_id=u.user_id WHERE u.user_id = '$_SESSION[username]' AND status='0' LIMIT  $currentPage,$searchlimit";
