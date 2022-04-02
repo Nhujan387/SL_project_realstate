@@ -1,0 +1,158 @@
+.forsale{
+    height: 100%; 
+    width: 100%;
+}
+.subsale{
+    border: 1px solid black;
+    
+}
+
+.typeofproperty{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:90%;
+    margin: 0 auto;
+}
+
+.house{
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.morehouse{
+    font-size: 28px;
+    text-align: right;
+}
+
+.subseller{
+    width: 90%;
+    margin: 0 auto;
+    height:48vh;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-gap: 5px;
+}
+
+.salecard{
+    width: 88%;
+    height: 45vh;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+.view{
+    border:1px;
+    background-color: green;
+    color: white;
+    width:20%;
+    font-size: larger;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px black;
+}
+
+.imgsale{
+    width:100%;
+    text-align: center;
+}
+
+.subsellerhouse{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-gap: 5px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding:5px;
+}
+
+.page{
+    color:black;
+    background-color: grey;
+    border:none;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 5px;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.houseonsale{
+    height: 83vh;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.typeofpropertyforsale{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width:98%;
+    margin: 0 auto;
+    height: 85vh;
+    background-color: white;
+}
+.typeofpropertybuyerinfo{
+    height: 35vh;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.sellerinformation{
+    margin-top: 10px;
+    height:30vh;
+    width: 90%;
+    padding: 10px;
+    font-size: 22px;
+    background-color: #ededed;
+    box-shadow:  0 3px 10px rgb(0 0 0 / 0.4); 
+}
+
+.housesale{
+    margin-top: 10px;
+    height:80vh;
+    width: 90%;
+    padding: 10px;
+    font-size: 22px;
+    background-color: #ededed;
+    box-shadow:  0 3px 10px rgb(0 0 0 / 0.4); 
+}
+
+.congras{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    width:100%;
+}
+
+.decore{
+    height: 80vh;
+    margin:10px;
+}
+
+.congratulation{
+    height: 80vh;
+    margin-top: 10px;
+    background-color:  #ededed;
+}
+.consold{
+    border:1px;
+    background-color: green;
+    color: white;
+    width:22%;
+    font-size: x-large;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px black;
+    float:right;
+}
+
+.emtmsg{
+    height: 30vh;
+    width: 100%;
+}

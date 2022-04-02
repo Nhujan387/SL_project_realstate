@@ -1,0 +1,251 @@
+.Sellorder{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 0px;
+    margin: 0 auto;
+    background-color: #D3D3D3;
+}
+.Sellorderseller{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #D3D3D3;
+}
+
+.subsell{
+    border: 1px solid black;
+    border-radius: 5px;
+    height:94vh;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    background-color: #DCDCDC;
+    text-align: center;
+    font-size: large;
+}
+.subseller{
+    height:94vh;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: #DCDCDC;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-gap: 5px;;
+}
+.salestat{
+    width: 90%;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 3px 3px grey;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.salestat2{
+    font-size: 22px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.salestat:hover{
+    background-color: black;
+    color: white;
+}
+
+.tips{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tips2{
+    width: 88%; 
+    margin: 0 auto;
+    text-align: left;
+    padding: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.info{
+    display: inline-block;
+    width: 14%;
+    font-size: large;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 2px;
+}
+form input{
+    width:18%;
+    font-size: larger;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+
+input[type=Radio]{
+    text-align: left;
+    width: 5%;
+    margin-top: 3px;
+}
+.subheads{
+    width: 100%; 
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+.submit{
+    margin: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 3px 3px grey;
+}
+
+.submit:hover{
+    background-color: black;
+    color: white;
+}
+
+#propertydetail{
+    border: 1px solid black;
+    border-radius: 5px;
+    height:82vh;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: #DCDCDC;
+    display: none;
+}
+
+.salecard{
+    width: 88%;
+    height: 45vh;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+
+.imgsale{
+    width:100%;
+    text-align: center;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding:5px;
+}
+
+.page{
+    color:black;
+    background-color: white;
+    border:none;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 5px;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.update{
+    border:1px;
+    background-color: #077b8a;
+    color: white;
+    width:20%;
+    font-size: larger;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px black;
+}
+.sold{
+    border:1px;
+    background-color:  #a2d5c6;
+    color: white;
+    width:20%;
+    font-size: larger;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px black;
+}
+.view{
+    border:1px;
+    background-color: #5c3c92;
+    color: white;
+    width:20%;
+    font-size: larger;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px black;
+}
+.delete{
+    border:1px;
+    background-color: #d72631;
+    color: white;
+    width:20%;
+    font-size: larger;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px black;
+}
+.Sellorderupdate{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #D3D3D3;
+}
+
+@media (max-width: 940px){
+.Sellorder{
+    display: block;
+    padding: 5px;
+    height: 110vh;
+    margin-bottom: 3px;
+}
+.subsell{
+    width: 98%;
+    height: 10vh;
+    margin: 0px;
+}
+.subsell2{
+    margin: 0;
+    margin-top: 2px;
+    width: 98%;
+    height: 95vh;
+}
+hr{
+    display: none;
+}
+.tips{
+    display: none;
+}
+.tips2{
+    display: none;
+}
+form input{
+    width:14%;
+    font-size: small;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+
+input[type=Radio]{
+    text-align: left;
+    width: 2%;
+    margin-top: 1px;
+}
+}
