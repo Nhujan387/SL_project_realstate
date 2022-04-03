@@ -50,8 +50,8 @@
             </div>
             <div class="fortable">
                 <div style="height:73vh;">
-                    <table border="1px solid black" width="100%" style="font-size:18px;background-color:white;text-align:center;">
-                        <tr>
+                    <table border="1px solid black" width="100%" style="border-collapse:collapse;font-size:18px;background-color:white;text-align:center;">
+                        <tr style="font-size:20px;">
                             <th width="8%;">Posted date</th>
                             <th  width="28%">Location</th>
                             <th width="22%">Area</th>
