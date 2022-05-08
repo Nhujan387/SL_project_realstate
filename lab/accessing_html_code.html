@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="demo" class="paragraph"></p>
+        <p></p>
+        <p class="paragraph"></p>
+        <script>
+            document.getElementById('demo').innerHTML='This content is changed using getElementById' ;
+            document.getElementsByTagName('p')[1].innerHTML='This content is changed using getElementByTagName' ;
+            document.getElementsByClassName('paragraph')[1].innerHTML='This content is changed using getElementByClassName';
+        </script>
+    </body>
+</html>

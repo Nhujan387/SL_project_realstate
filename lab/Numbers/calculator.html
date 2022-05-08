@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            button{
+                border: 2px solid #9b9999;
+                border-radius: 12px;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <div class="calculator" >
+            <div>
+                <input type="text" placeholder="0" id="calc" style="border: 1px solid black ;width: 193px; height: 30px; margin-bottom: 5px;"/>
+            </div>
+            <div>
+                <button onclick="ac()">AC</button>
+                <button onclick="del()">DEL</button>
+                <button onclick="display('%')">%</button>
+                <button onclick="display('/')">/</button>
+            </div>
+            <div>
+                <button onclick="display('7')">7</button>
+                <button onclick="display('8')">8</button>
+                <button onclick="display('9')">9</button>
+                <button onclick="display('*')">*</button>
+            </div>
+            <div>
+                <button onclick="display('4')">4</button>
+                <button onclick="display('5')">5</button>
+                <button onclick="display('6')">6</button>
+                <button onclick="display('-')">-</button>
+            </div>
+            <div>
+                <button onclick="display('1')">1</button>
+                <button onclick="display('2')">2</button>
+                <button onclick="display('3')">3</button>
+                <button onclick="display('+')">+</button>
+                
+            </div>
+            <div>
+                <button onclick="display('.')">.</button>
+                <button onclick="display('0')">0</button>
+                
+                <button onclick="calculate()">=</button>
+            </div>
+        </div>
+        <script>
+            output = document.getElementById('calc');
+
+            function display(num){
+                output.value += num;
+            }
+
+            function calculate(){
+                try{
+                    output.value = eval(output.value);
+                }
+                catch(err){
+                    alert('syntax error');
+                }
+            }
+
+            function ac(){
+                output.value= '';
+            }
+
+            function del(){
+                output.value = output.value.slice(0,-1);
+            }
+        </script>
+    </body>
+</html>

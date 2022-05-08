@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <form action="#" method="post" onsubmit="event.preventDefault(); validate()">
+                <label for="uname">User Name</label> 
+                <input type="text" name="uname" id="uname" placeholder="Enter your name"/>
+                <br/>
+                <span id="for_user_name">User name cannot be empty</span> <br/>
+
+                <label for="Email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter email"/>
+                <br/>
+                <span id="for_email" >Email cannot be empty</span> <br/>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password"/>
+                <br/>
+                <span id="for_password">Password cannot be empty</span> <br/>
+                <span id="password_length">Password must be of atleast 8 characters</span>
+                <br/>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <script>
+            function validate(){
+                userName = $('#uname').val();
+                Email = $('#email').val();
+                Password =$('#password').val();
+                isValidate = true; 
+
+                if(userName == ''){
+                    $('#for_user_name').show();
+                }else{
+                    $('#for_user_name').hide();
+                }
+
+                if(Email == ''){
+                    $('#for_email').show();
+                }else{
+                    $('#for_email').hide();
+                }
+            
+                if(Password == ''){
+                    $('#for_password').show();
+                }else{
+                    $('#for_password').hide();
+                    if(Password.length < 8){
+                        $('#password_length').show();
+                    }else{
+                        $('#password_length').hide();
+                    }
+                }
+                
+            }
+        </script>
+    </body>
+</html>

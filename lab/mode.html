@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="first">Change the mode</p>
+    <button onclick="darkmode()">DARK MODE</button>
+    <button onclick="lightmode()">LIGHT MODE</button>
+    <button onclick="chillmode()">CHILL MODE</button>
+    <button onclick="dangermode()">Danger MODE</button>
+    <button onclick="girlymode()">GIRLY MODE</button>
+    <script>
+        
+
+        function darkmode(){
+            document.getElementById('first').innerHTML= 'Lets change the color to black' ;
+            document.body.style.backgroundColor ='black';
+            document.getElementById('first').style.color= 'white';
+        }
+        function lightmode(){
+            document.getElementById('first').innerHTML= 'Lets change the color white' ;
+            document.body.style.backgroundColor ='white';
+            document.getElementById('first').style.color= 'black';
+        }
+        function chillmode(){
+            document.getElementById('first').innerHTML= 'have a chill' ;
+            document.body.style.backgroundColor ='blue';
+            document.getElementById('first').style.color= 'white';
+        }
+        function dangermode(){
+            document.getElementById('first').innerHTML= 'RUN!!!!' ;
+            document.body.style.backgroundColor ='red';
+            document.getElementById('first').style.color= 'black';
+        }
+        function girlymode(){
+            document.getElementById('first').innerHTML= 'hello hello' ;
+            document.body.style.backgroundColor ='pink';
+            document.getElementById('first').style.color= 'blue';
+        }
+
+
+    </script>
+</body>
+</html>

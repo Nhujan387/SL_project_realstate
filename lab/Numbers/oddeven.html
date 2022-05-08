@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <form id="oddeven" onsubmit="event.preventDefault(); oddEven()" >
+            <input type="text" placeholder="enter a number" id="num" />
+            <input type="submit" value="submit" />
+        </form>
+        
+        <script>
+            function oddEven(){
+                num = document.getElementById('num').value;
+
+                if(isNaN(num)){
+                    alert('enter only number');
+                    return false;
+                }
+                if(num ==''){
+                    alert('enter number');
+                    return false;
+                }
+                if (num%2==0){
+                        alert('entered number is even ');
+                        return false;
+                    }
+                else{
+                        alert('entered number is odd');
+                        return false;
+                    }   
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Validation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+            font-family: "Open Sans";
+            font-size: 14px;
+            }
+
+            .container {
+            width: 500px;
+            margin: 25px auto;
+            }
+
+            .title {
+            margin-bottom: 1rem;
+            }
+
+            form {
+            padding: 20px;
+            background: #2c3e50;
+            color: #fff;
+            border-radius: 4px;
+            }
+            form label,
+            form input,
+            form button {
+            border: 0;
+            margin-bottom: 3px;
+            display: block;
+            width: 100%;
+            }
+            form input {
+            height: 25px;
+            line-height: 25px;
+            background: #fff;
+            color: #000;
+            padding: 0 6px;
+            box-sizing: border-box;
+            }
+
+            form button {
+            height: 30px;
+            line-height: 30px;
+            background: #e67e22;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            cursor: pointer;
+            }
+            form .error {
+            color: #ff0000;
+            }
+
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2 class="title">Registration</h2>
+            <form action="#" name="registration">
+              <label for="Username">User Name</label>
+              <input type="text" name="username" id="username">
+          
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" >
+          
+              <button type="submit">Register</button>
+            </form>
+          </div>
+    <script>
+        $(function() {
+    $("form[name='login_form']").validateLogin({
+      rules: {
+        username: {
+          required: true
+        },
+        password: {
+          required: true,
+          minlength: 5
+        }
+      },
+      messages: {
+        password: {
+          required: "Please provide a password",
+          minlength: "Your password must be at least 5 characters long"
+        },
+        email: "Please enter a username"
+      },
+      submitHandler: function(form) {
+        form.submit();
+      }
+    });
+  });
+    </script>
+    </body>
+</html>
